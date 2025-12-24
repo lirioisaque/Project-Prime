@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lana Prime Group | Luxury General Contractor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="container top-bar-content">
+               
+                <span><i class="fas fa-envelope"></i> contact@lanaprimegroup.com</span>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo-wrapper" onclick="showPage('home')">
+                    <img src="images/logo.png" alt="Lana Prime Group Logo" class="main-logo">
+                </div>
+
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="#" onclick="showPage('home')" class="nav-link">Home</a></li>
+                    <li><a href="#" onclick="showPage('about')" class="nav-link">About</a></li>
+                    <li><a href="#" onclick="showPage('roofing')" class="nav-link">Roofing</a></li>
+                    <li><a href="#" onclick="showPage('remodeling')" class="nav-link">Remodeling</a></li>
+                    <li><a href="#" onclick="showPage('new-construction')" class="nav-link">New Construction</a></li>
+                    <li><a href="#" onclick="showPage('contact')" class="btn-quote">Request Quote</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <section id="home" class="page-section active">
+            <div class="hero">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Building Your <span class="italic-accent">Vision</span></h1>
+                    <p>Premier Residential & Commercial Construction in South Florida.</p>
+                    <div class="hero-btns">
+                        <button class="btn-primary" onclick="showPage('contact')">Get an Estimate</button>
+                        <button class="btn-secondary" onclick="showPage('remodeling')">View Portfolio</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container section-spacing">
+                <div class="intro-text">
+                    <h2>Excellence in Every Detail</h2>
+                    <div class="separator"></div>
+                    <p>We combine architectural expertise with master craftsmanship to deliver high-end construction services.</p>
+                </div>
+
+                <div class="grid-3">
+                    <div class="card" onclick="showPage('roofing')">
+                        <div class="icon-box"><i class="fas fa-layer-group"></i></div>
+                        <h3>Roofing Systems</h3>
+                        <p>Advanced protection for commercial & residential properties.</p>
+                        <span class="link-text">Explore <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                    <div class="card" onclick="showPage('remodeling')">
+                        <div class="icon-box"><i class="fas fa-paint-roller"></i></div>
+                        <h3>Luxury Remodeling</h3>
+                        <p>Transforming kitchens and bathrooms into sanctuaries.</p>
+                        <span class="link-text">Explore <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                    <div class="card" onclick="showPage('new-construction')">
+                        <div class="icon-box"><i class="fas fa-city"></i></div>
+                        <h3>New Construction</h3>
+                        <p>Ground-up development executed with precision.</p>
+                        <span class="link-text">Explore <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page-section">
+            <div class="container section-spacing">
+                <div class="split-layout">
+                    <div class="image-block">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1000&auto=format&fit=crop" alt="Construction Site">
+                        <div class="exp-badge">
+                            <span class="years">10+</span>
+                            <span class="text">Years of<br>Excellence</span>
+                        </div>
+                    </div>
+                    <div class="text-block">
+                        <h2 class="section-title">About Lana Prime Group</h2>
+                        <div class="separator-left"></div>
+                        <p class="lead-text">Lana Prime Group is a full-scale General Contractor servicing the Tri-County area of South Florida.</p>
+                        <p>We define ourselves not just by the structures we build, but by the relationships we forge. With over 10 years of experience, we specialize in high-end remodeling, complex roofing systems, and new commercial construction.</p>
+                        
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Licensed & Insured (CGC)</li>
+                            <li><i class="fas fa-check"></i> Certified PMP Professionals</li>
+                            <li><i class="fas fa-check"></i> High-End Material Sourcing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roofing" class="page-section">
+    <div class="container section-spacing">
+        <div class="center-header">
+            <h2 class="section-title">Roofing Projects</h2>
+            <div class="separator"></div>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab(event, 'roofing-commercial')">Commercial</button>
+            <button class="tab-btn" onclick="openTab(event, 'roofing-residential')">Residential</button>
+        </div>
+
+        <div id="roofing-commercial" class="tab-content active-tab">
+            <div class="gallery-grid">
+                
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <video poster="images/roofing-comm-poster-1.jpg" muted>
+                        <source src="videos/roofing-comm-1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="overlay"><span>Watch Video</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/roofing-comm-1.jpg" alt="Flat Roof System">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/roofing-comm-2.jpg" alt="Metal Roofing">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <video poster="images/roofing-comm-poster-2.jpg" muted>
+                        <source src="videos/roofing-comm-2.mp4" type="video/mp4">
+                    </video>
+                     <div class="overlay"><span>Watch Video</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/roofing-comm-3.jpg" alt="Industrial Park Roof">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/roofing-comm-4.jpg" alt="Safety Inspection">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="roofing-residential" class="tab-content">
+            <div class="gallery-grid">
+                
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/roofing-res-1.jpg" alt="Tile Roof">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <video poster="images/roofing-res-poster-1.jpg" muted>
+                        <source src="videos/roofing-res-1.mp4" type="video/mp4">
+                    </video>
+                     <div class="overlay"><span>Watch Video</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/roofing-res-2.jpg" alt="Shingle Roof Replacement">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/roofing-res-3.jpg" alt="Modern Metal Roof">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                     <video poster="images/roofing-res-poster-2.jpg" muted>
+                        <source src="videos/roofing-res-2.mp4" type="video/mp4">
+                    </video>
+                     <div class="overlay"><span>Watch Video</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/roofing-res-4.jpg" alt="Luxury Home Roof">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+        <section id="remodeling" class="page-section">
+    <div class="container section-spacing">
+        <div class="center-header">
+            <h2 class="section-title">Remodeling</h2>
+            <div class="separator"></div>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab(event, 'remod-commercial')">Commercial</button>
+            <button class="tab-btn" onclick="openTab(event, 'remod-residential')">Residential</button>
+        </div>
+
+        <div id="remod-commercial" class="tab-content active-tab">
+            <div class="gallery-grid">
+                
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <video poster="images/remodel-comm-poster-1.jpg" muted>
+                        <source src="videos/remodel-comm-1.mp4" type="video/mp4">
+                    </video>
+                     <div class="overlay"><span>Watch Video</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/remodel-comm-1.jpg" alt="Office Renovation">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/remodel-comm-2.jpg" alt="Retail Space">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                     <video poster="images/remodel-comm-poster-2.jpg" muted>
+                        <source src="videos/remodel-comm-2.mp4" type="video/mp4">
+                    </video>
+                     <div class="overlay"><span>Watch Video</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/remodel-comm-3.jpg" alt="Lobby Remodel">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+                
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/remodel-comm-4.jpg" alt="Corporate Breakroom">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="remod-residential" class="tab-content">
+            <div class="gallery-grid">
+                
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/remodel-res-1.jpg" alt="Modern Kitchen">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <video poster="images/remodel-res-poster-1.jpg" muted>
+                        <source src="videos/remodel-res-1.mp4" type="video/mp4">
+                    </video>
+                     <div class="overlay"><span>Watch Video</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/remodel-res-2.jpg" alt="Luxury Bathroom">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/remodel-res-3.jpg" alt="Open Concept Living">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <video poster="images/remodel-res-poster-2.jpg" muted>
+                        <source src="videos/remodel-res-2.mp4" type="video/mp4">
+                    </video>
+                     <div class="overlay"><span>Watch Video</span></div>
+                </div>
+
+                <div class="gallery-item vertical" onclick="openLightbox(this)">
+                    <img src="images/remodel-res-4.jpg" alt="Master Suite">
+                    <div class="overlay"><span>View Project</span></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="new-construction" class="page-section">
+            <div class="container section-spacing">
+                <div class="center-header">
+                    <h2 class="section-title">New Construction</h2>
+                    <div class="separator"></div>
+                </div>
+                
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="openTab(event, 'const-struct')">Structural</button>
+                    <button class="tab-btn" onclick="openTab(event, 'const-mech')">Mechanical</button>
+                </div>
+
+                <div id="const-struct" class="tab-content active-tab">
+                    <div class="gallery-grid">
+                        <div class="gallery-item vertical video-card" onclick="openLightbox(this)">
+                             <video poster="images/new-const-poster-1.jpg" muted>
+                                <source src="videos/new-const-1.mp4" type="video/mp4">
+                            </video>
+                             <div class="overlay"><span>Watch Video</span></div>
+                        </div>
+                         <div class="gallery-item vertical" onclick="openLightbox(this)">
+                            <img src="images/new-const-1.jpg" alt="Steel Beams">
+                            <div class="overlay"><span>View Photo</span></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="const-mech" class="tab-content">
+                    <div class="gallery-grid">
+                        <div class="gallery-item vertical" onclick="openLightbox(this)">
+                            <img src="images/new-const-2.jpg" alt="HVAC">
+                            <div class="overlay"><span>View Photo</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section">
+            <div class="container section-spacing">
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <h2>Start Your Project</h2>
+                        <div class="separator-left"></div>
+                        <p>Ready to bring your vision to life? Contact us today for a consultation.</p>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Call Us</strong>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email Us</strong>
+                                <p>info@lanaprimegroup.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <p>Serving South Florida Tri-County Area</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-wrapper">
+                        <form class="quote-form" action="https://formspree.io/f/mdkqyweb" method="POST">
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="name" required>
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label>Phone</label>
+        <input type="tel" name="phone" required>
+    </div>
+    <div class="form-group">
+        <label>Service</label>
+        <select name="service">
+            <option value="Commercial Roofing">Commercial Roofing</option>
+            <option value="Residential Roofing">Residential Roofing</option>
+            <option value="Remodeling">Remodeling</option>
+            <option value="New Construction">New Construction</option>
+        </select>
+    </div>
+    <div class="form-group full-width">
+        <label>Project Details</label>
+        <textarea name="message" rows="4"></textarea>
+    </div>
+    <button type="submit" class="btn-submit">Send Request</button>
+</form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div class="footer-col brand-col">
+                <div class="footer-logo">LANA PRIME GROUP</div>
+                <p class="footer-tagline">
+                    Building relationships and structures with excellence. Premier General Contractor serving the South Florida Tri-County area.
+                </p>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h3 class="footer-heading">Contact Info</h3>
+                <ul class="footer-contact-list">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>
+                            <strong>Headquarters:</strong><br>
+                            455 Fairway Dr 201, Suite 201<br>
+                            Deerfield Beach, FL 33442
+                        </span>
+                    </li>
+                    <li>
+    <i class="fas fa-phone-alt"></i>
+    <span>
+        <strong>Naples:</strong> (239) 453-4109<br>
+        <strong>Tampa:</strong> (813) 475-3157<br>
+        <strong>Charlotte:</strong> (941) 254-5865<br>
+        <strong>St.Lucie:</strong> (772) 222-5379
+    </span>
+</li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>contact@lanaprimegroup.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col social-col">
+                <h3 class="footer-heading">Connect</h3>
+                <p>Follow our latest projects and industry updates.</p>
+                <a href="https://www.linkedin.com/in/lana-prime-768749399/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i> 
+                    <span>Follow on LinkedIn</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lana Prime Group. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Project Image">
+        <video class="lightbox-content" id="lightbox-video" controls playsinline></video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
